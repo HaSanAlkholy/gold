@@ -593,7 +593,6 @@ nav .top-setting .top-dropDown {
   visibility: hidden;
   opacity: 0;
   z-index: 9;
-  text-align: center;
 }
 
 nav .top-setting .drop-link {
