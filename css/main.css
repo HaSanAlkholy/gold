@@ -653,7 +653,7 @@ nav .nav-top .top-head p {
 
 nav .nav-top .top-body .social a {
   font-size: 17px;
-  margin: 0 10px;
+  margin: 0 11px;
   transition: all 0.3s;
   color: inherit;
 }
@@ -716,7 +716,7 @@ nav .nav-bottom .nav-logo img {
 
 nav .nav-bottom .search {
   margin-inline-end: auto;
-  margin-inline-start: 75px;
+  margin-inline-start: 40px;
 }
 
 nav .nav-bottom .search .search-content {
