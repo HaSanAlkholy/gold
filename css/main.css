@@ -1005,6 +1005,11 @@ nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li:nth-last-of-ty
 nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .top-dropDown {
   top: 0;
   left: -42%;
+  text-align: start;
+}
+
+nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .top-dropDown a {
+  font-family: HelveticaRoman;
 }
 
 nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .top-dropDown a:hover {

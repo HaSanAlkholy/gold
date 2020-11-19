@@ -768,8 +768,10 @@ nav {
                                     .top-dropDown {
                                         top: 0;
                                         left: -42%;
+                                        text-align: start;
 
                                         a {
+                                            font-family: HelveticaRoman;
                                             &:hover {
                                                 color: $color2;
                                             }
