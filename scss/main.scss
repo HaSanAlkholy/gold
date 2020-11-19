@@ -487,7 +487,7 @@ nav {
                 max-width: 100%;
             }
 
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 margin-inline-end: 15px;
             }
         }
@@ -622,8 +622,8 @@ nav {
                     }
                 }
 
-                &:hover{
-                    .setting-anchor{
+                &:hover {
+                    .setting-anchor {
                         color: $color2;
                     }
                 }
@@ -740,6 +740,7 @@ nav {
                                         border-bottom: 1px solid rgba(0, 0, 0, 0.102);
                                         font-size: 18px;
                                         font-family: HelveticaRoman;
+                                        padding: 3px 0;
 
                                         &:after {
                                             display: none;
@@ -927,10 +928,8 @@ nav {
             z-index: -5;
             opacity: 0;
             transition: all 0.5s;
-        }
 
-        .nava-content {
-            @media (max-width: 1200px) {
+            .nava-content {
                 position: absolute;
                 top: 0;
                 right: -150%;
@@ -990,9 +989,10 @@ nav {
                                     min-width: unset;
                                     width: 100%;
 
-                                    &>li{
-                                        &>.setting-anchor{
+                                    & > li {
+                                        & > .setting-anchor {
                                             border: none;
+                                            padding:0;
                                         }
                                     }
 
@@ -1054,23 +1054,24 @@ nav {
                         color: #bdbdbd;
                     }
                 }
-            }
-            @media (max-width: 576px) {
-                width: 85%;
 
-                .nava-head {
-                    font-size: 16px;
+                @media (max-width: 576px) {
+                    width: 85%;
 
-                    .nava-close {
-                        font-size: 20px;
-                    }
-                }
-
-                li {
-                    margin: 9px 0;
-
-                    a {
+                    .nava-head {
                         font-size: 16px;
+
+                        .nava-close {
+                            font-size: 20px;
+                        }
+                    }
+
+                    li {
+                        margin: 9px 0;
+
+                        a {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
