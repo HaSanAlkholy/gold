@@ -196,6 +196,7 @@ $(window).on('load', function () {
       // when window width is >= 250px
       0: {
         slidesPerView: 4,
+        spaceBetween: 10,
       }
     },
 
