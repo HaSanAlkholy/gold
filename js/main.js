@@ -110,12 +110,6 @@ $(window).on('load', function () {
       delay: 5000,
     },
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -151,6 +145,7 @@ $(window).on('load', function () {
       // when window width is >= 250px
       150: {
         slidesPerView: 2,
+        spaceBetween: 10
       }
     },
 
@@ -196,7 +191,7 @@ $(window).on('load', function () {
       // when window width is >= 250px
       0: {
         slidesPerView: 4,
-        spaceBetween: 10,
+        spaceBetween: 7,
       }
     },
 

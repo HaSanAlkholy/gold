@@ -140,7 +140,7 @@
 
     .swiper-pagination {
         position: static;
-        margin-top: 30px;
+        margin-top: 25px;
         display: none;
 
         @media (max-width: 1200px) {
@@ -150,8 +150,8 @@
 
     //swiper bagenation
     .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
         border-radius: 100%;
         background: rgba(0, 0, 0, 0.5);
         opacity: 1;
@@ -173,7 +173,7 @@
     text-align: center;
 
     @media (max-width: 576px) {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
 
     h3 {
@@ -184,7 +184,7 @@
         position: relative;
 
         @media (max-width: 576px) {
-            font-size: 21px;
+            font-size: 24px;
         }
     }
 }
@@ -245,6 +245,10 @@
                 transform: scale(1);
             }
         }
+
+        @media (max-width: 576px) {
+            margin-bottom: 15px;
+        }
     }
 
     .product-disc {
@@ -270,14 +274,14 @@
             color: $color1;
             justify-content: center;
             margin-bottom: 5px;
+            font-family: HelveticaBold;
 
             .price-now {
                 font-size: 18px;
-                font-family: HelveticaBold;
             }
             .price-sale {
                 text-decoration: line-through;
-                color: gray;
+                color: #b1b1b1;
                 margin: 0 5px;
                 font-size: 16px;
                 font-weight: 400;
@@ -291,8 +295,13 @@
             @media (max-width: 576px) {
                 flex-direction: column;
 
+                .price-now {
+                    font-size: 16px;
+                }
+
                 .price-sale {
                     margin-top: 7px;
+                    font-size: 15px;
                 }
             }
         }
@@ -474,6 +483,10 @@ nav {
     .nav-bottom {
         padding: 25px 0;
 
+        @media (max-width: 576px) {
+            padding: 15px 0;
+        }
+
         .c2 {
             display: flex;
             align-items: center;
@@ -585,7 +598,7 @@ nav {
             .cart {
                 font-family: HelveticaBold;
                 .cart-btn {
-                    font-size: 22px;
+                    font-size: 24px;
                     position: relative;
                     transition: all 0.5s;
 
@@ -634,11 +647,12 @@ nav {
         background-color: $color1;
         color: white;
         font-size: 17px;
-        height: 55px;
+        height: 50px;
         width: 100%;
         justify-content: flex-start;
         display: none;
         cursor: pointer;
+        font-family: HelveticaBold;
 
         @media (max-width: 1200px) {
             display: flex;
@@ -650,7 +664,7 @@ nav {
             justify-content: flex-start;
 
             span {
-                margin-inline-end: 10px;
+                margin-inline-end: 13px;
                 font-size: 22px;
             }
         }
@@ -901,7 +915,7 @@ nav {
                     transform: rotate(268deg);
                 }
                 .call-body {
-                    margin-top: 10px;
+                    margin-top: 20px;
 
                     h5 {
                         font-size: 16px;
@@ -956,7 +970,7 @@ nav {
                         order: 2;
 
                         a {
-                            font-size: 18px;
+                            font-size: 17px;
 
                             &:hover {
                                 color: $color2;
@@ -976,8 +990,14 @@ nav {
                             padding: unset;
                             min-width: unset;
                             width: 100%;
+                            font-size: 17px;
                             .lnr-menu {
                                 display: none;
+                            }
+
+                            .lnr-chevron-down {
+                                font-size: 12px;
+                                color: black;
                             }
                         }
 
@@ -993,7 +1013,7 @@ nav {
                                     & > li {
                                         & > .setting-anchor {
                                             border: none;
-                                            padding:0;
+                                            padding: 0;
                                         }
                                     }
 
@@ -1060,10 +1080,15 @@ nav {
                     width: 85%;
 
                     .nava-head {
-                        font-size: 16px;
+                        font-size: 14px;
+
+                        a {
+                            color: rgb(146, 146, 146);
+                            font-family: HelveticaBold;
+                        }
 
                         .nava-close {
-                            font-size: 20px;
+                            font-size: 18px;
                         }
                     }
 
@@ -1339,7 +1364,7 @@ header {
 
     @media (max-width: 768px) {
         margin-top: 25px;
-        margin-bottom: 40px;
+        margin-bottom: 55px;
     }
 
     .container {
@@ -1411,7 +1436,7 @@ header {
 
         .swiper-pagination {
             position: static;
-            margin-top: 30px;
+            margin-top: 25px;
             display: none;
 
             @media (max-width: 1200px) {
@@ -1421,8 +1446,8 @@ header {
 
         //swiper bagenation
         .swiper-pagination-bullet {
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
             border-radius: 100%;
             background: rgba(0, 0, 0, 0.5);
             opacity: 1;
@@ -1457,7 +1482,6 @@ header {
                 img {
                     width: 100%;
                     border-radius: 100%;
-                    mix-blend-mode: darken;
                     transition: all 0.5s;
                 }
 
@@ -1472,6 +1496,7 @@ header {
 
                 @media (max-width: 576px) {
                     font-size: 17px;
+                    margin-top: 10px;
                 }
             }
         }
@@ -1508,6 +1533,10 @@ header {
 
     .special-body {
         margin-bottom: 50px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -1619,6 +1648,10 @@ header {
 
     .best-seller-body {
         margin-bottom: 50px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -1742,8 +1775,9 @@ header {
         @media (max-width: 768px) {
             .product {
                 width: 48%;
+                margin-bottom: 25px;
             }
-            margin-bottom: 10px;
+            margin-bottom: 25px;
         }
     }
 }
@@ -1753,7 +1787,7 @@ header {
     background-color: $color2;
 
     @media (max-width: 576px) {
-        padding: 25px;
+        padding: 25px 0;
     }
 
     .container {
@@ -1789,7 +1823,7 @@ header {
 
         .swiper-pagination {
             position: static;
-            margin-top: 30px;
+            margin-top: 25px;
             display: none;
 
             @media (max-width: 1200px) {
@@ -1799,8 +1833,8 @@ header {
 
         //swiper bagenation
         .swiper-pagination-bullet {
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
             border-radius: 100%;
             background: rgba(0, 0, 0, 0.5);
             opacity: 1;
@@ -1868,7 +1902,13 @@ footer {
     background-color: $color1;
 
     @media (max-width: 576px) {
-        padding-top: 50px;
+        padding-top: 45px;
+    }
+    
+    .c2{
+        @media(max-width:992px){
+            padding:0 20px;
+        }
     }
 
     .container {
@@ -1916,7 +1956,7 @@ footer {
             img {
                 margin-top: -30px;
                 max-width: 100%;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
 
             p {
@@ -1926,7 +1966,7 @@ footer {
             }
 
             @media (max-width: 992px) {
-                margin-bottom: 30px;
+                margin-bottom: 40px;
 
                 img {
                     margin: 0;
@@ -2098,7 +2138,7 @@ footer {
 
         .payment {
             @media (max-width: 992px) {
-                margin-top: 30px;
+                margin-top: 35px;
                 .head {
                     display: none;
                 }
@@ -2140,7 +2180,7 @@ footer {
                     }
                     &:nth-of-type(1) {
                         margin: 10px 0;
-                        margin-top: 30px;
+                        margin-top: 40px;
                     }
                 }
             }
