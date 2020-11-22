@@ -370,8 +370,9 @@ nav {
         .top-dropDown {
             position: absolute;
             top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
+            right:0;
+            // left: 50%;
+            // transform: translateX(-50%);
             background-color: #fff;
             min-width: 120px;
             padding: 8px 9px 9px;
@@ -426,7 +427,6 @@ nav {
         }
 
         .top-head {
-            padding: 7px;
 
             img {
                 max-width: 31px;
@@ -453,8 +453,8 @@ nav {
             }
 
             .nav-lang {
-                height: 50px;
-                width: 50px;
+                height: 45px;
+                width: 45px;
                 background-color: #ebebeb;
                 font-size: 14px;
                 margin-inline-start: 10px;
@@ -481,7 +481,7 @@ nav {
     }
 
     .nav-bottom {
-        padding: 25px 0;
+        padding: 26px 0;
 
         @media (max-width: 576px) {
             padding: 15px 0;
@@ -509,7 +509,7 @@ nav {
             margin-inline-start: 40px;
             .search-content {
                 position: relative;
-                width: 497px;
+                width: 490px;
                 form {
                     width: 100%;
                 }
@@ -521,7 +521,7 @@ nav {
                     opacity: 0.47;
                     border-radius: 50px;
                     border: 1px solid rgb(191, 191, 191);
-                    padding: 0 25px;
+                    padding: 0 30px;
                     color: rgb(146, 146, 146);
                     outline: none;
                 }
@@ -613,8 +613,8 @@ nav {
                         color: white;
                         font-size: 12px;
                         position: absolute;
-                        top: -6px;
-                        right: -8px;
+                        top: -3px;
+                        right: -7px;
                     }
 
                     &:hover {
@@ -728,7 +728,7 @@ nav {
                         }
 
                         .lnr-menu {
-                            margin-inline-end: 10px;
+                            margin-inline-end: 12px;
                             font-size: 22px;
                         }
                     }
@@ -782,6 +782,8 @@ nav {
                                         top: 0;
                                         left: -42%;
                                         text-align: start;
+                                        transform: translateX(-50%);
+                                        right: unset;
 
                                         a {
                                             font-family: HelveticaRoman;
@@ -848,7 +850,7 @@ nav {
                     height: 50px;
                     width: 50px;
                     background-color: $color1;
-                    margin-inline-end: 25px;
+                    margin-inline-end: 30px;
                     cursor: pointer;
 
                     .setting-anchor {
@@ -886,8 +888,8 @@ nav {
                             color: white;
                             font-size: 12px;
                             position: absolute;
-                            top: -6px;
-                            right: -8px;
+                            top: -3px;
+                            right: -7px;
                         }
                     }
                     &:hover {
@@ -1182,7 +1184,7 @@ nav {
     }
 
     .search {
-        width: 497px;
+        width: 490px;
         height: 54px;
         max-width: 90%;
         text-align: center;
@@ -1200,7 +1202,7 @@ nav {
             line-height: 4;
             outline: none;
             border: 1px solid rgb(191, 191, 191);
-            padding: 0 25px;
+            padding: 0 30px;
             font-size: 16px;
             background-color: rgb(247, 247, 247);
             opacity: 0.47;
@@ -1323,7 +1325,7 @@ header {
             height: 40px;
             width: 40px;
             border-radius: 100%;
-            top: 50%;
+            top: 45%;
 
             @media (max-width: 768px) {
                 display: none;

@@ -593,8 +593,7 @@ nav .top-setting .setting-anchor::after {
 nav .top-setting .top-dropDown {
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0;
   background-color: #fff;
   min-width: 120px;
   padding: 8px 9px 9px;
@@ -646,10 +645,6 @@ nav .nav-top .c2 {
   align-items: center;
 }
 
-nav .nav-top .top-head {
-  padding: 7px;
-}
-
 nav .nav-top .top-head img {
   max-width: 31px;
 }
@@ -672,8 +667,8 @@ nav .nav-top .top-body .social a:hover {
 }
 
 nav .nav-top .top-body .nav-lang {
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   background-color: #ebebeb;
   font-size: 14px;
   margin-inline-start: 10px;
@@ -700,7 +695,7 @@ nav .nav-top .top-body .nav-lang:hover a {
 }
 
 nav .nav-bottom {
-  padding: 25px 0;
+  padding: 26px 0;
 }
 
 @media (max-width: 576px) {
@@ -736,7 +731,7 @@ nav .nav-bottom .search {
 
 nav .nav-bottom .search .search-content {
   position: relative;
-  width: 497px;
+  width: 490px;
 }
 
 nav .nav-bottom .search .search-content form {
@@ -751,7 +746,7 @@ nav .nav-bottom .search .search-content input {
   opacity: 0.47;
   border-radius: 50px;
   border: 1px solid #bfbfbf;
-  padding: 0 25px;
+  padding: 0 30px;
   color: #929292;
   outline: none;
 }
@@ -854,8 +849,8 @@ nav .nav-bottom .nav-icons-sm .cart .cart-btn .count {
   color: white;
   font-size: 12px;
   position: absolute;
-  top: -6px;
-  right: -8px;
+  top: -3px;
+  right: -7px;
 }
 
 nav .nav-bottom .nav-icons-sm .cart .cart-btn:hover .count {
@@ -971,7 +966,7 @@ nav .nava .nava-content > ul .cat > .setting-anchor .lnr-chevron-down {
 }
 
 nav .nava .nava-content > ul .cat > .setting-anchor .lnr-menu {
-  margin-inline-end: 10px;
+  margin-inline-end: 12px;
   font-size: 22px;
 }
 
@@ -1022,6 +1017,8 @@ nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .top-dropDown 
   top: 0;
   left: -42%;
   text-align: start;
+  transform: translateX(-50%);
+  right: unset;
 }
 
 nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .top-dropDown a {
@@ -1085,7 +1082,7 @@ nav .nava .nava-content .nava-icons .user {
   height: 50px;
   width: 50px;
   background-color: #1f1f1f;
-  margin-inline-end: 25px;
+  margin-inline-end: 30px;
   cursor: pointer;
 }
 
@@ -1124,8 +1121,8 @@ nav .nava .nava-content .nava-icons .cart .cart-btn .count {
   color: white;
   font-size: 12px;
   position: absolute;
-  top: -6px;
-  right: -8px;
+  top: -3px;
+  right: -7px;
 }
 
 nav .nava .nava-content .nava-icons .cart:hover .count {
@@ -1394,7 +1391,7 @@ nav .nava-active .nava-content {
 }
 
 .search-form .search {
-  width: 497px;
+  width: 490px;
   height: 54px;
   max-width: 90%;
   text-align: center;
@@ -1415,7 +1412,7 @@ nav .nava-active .nava-content {
   line-height: 4;
   outline: none;
   border: 1px solid #bfbfbf;
-  padding: 0 25px;
+  padding: 0 30px;
   font-size: 16px;
   background-color: #f7f7f7;
   opacity: 0.47;
@@ -1542,7 +1539,7 @@ header .swiper-container .swiper-button-next {
   height: 40px;
   width: 40px;
   border-radius: 100%;
-  top: 50%;
+  top: 45%;
 }
 
 @media (max-width: 768px) {
