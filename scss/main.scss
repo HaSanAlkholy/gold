@@ -324,10 +324,6 @@ nav {
         @media (min-width: 992px) {
             width: 100%;
         }
-
-        @media (min-width: 1200px) {
-            width: 1600px;
-        }
     }
 
     .row {
@@ -353,7 +349,7 @@ nav {
         .setting-anchor {
             font-size: 14px;
             color: rgb(122, 129, 134);
-            line-height: 40px;
+            line-height: 35px;
             display: flex;
             align-items: center;
             cursor: pointer;
@@ -367,6 +363,7 @@ nav {
                 margin-right: 5px;
             }
         }
+
         .top-dropDown {
             position: absolute;
             top: 100%;
@@ -753,7 +750,6 @@ nav {
                                         border-bottom: 1px solid rgba(0, 0, 0, 0.102);
                                         font-size: 18px;
                                         font-family: HelveticaRoman;
-                                        padding: 3px 0;
 
                                         &:after {
                                             display: none;
