@@ -569,7 +569,6 @@ nav .top-setting {
 nav .top-setting .setting-anchor {
   font-size: 14px;
   color: #7a8186;
-  line-height: 35px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -987,6 +986,7 @@ nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .setting-ancho
   border-bottom: 1px solid rgba(0, 0, 0, 0.102);
   font-size: 18px;
   font-family: HelveticaRoman;
+  padding: 7px 0;
 }
 
 nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .setting-anchor:after {
