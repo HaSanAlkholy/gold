@@ -367,9 +367,8 @@ nav {
         .top-dropDown {
             position: absolute;
             top: 100%;
-            right:0;
-            // left: 50%;
-            // transform: translateX(-50%);
+            left: 50%;
+            transform: translateX(-50%);
             background-color: #fff;
             min-width: 120px;
             padding: 8px 9px 9px;
@@ -432,6 +431,7 @@ nav {
                 margin-inline-start: 10px;
                 font-size: 14px;
                 font-family: HelveticaBold;
+                margin-top: -5px;
             }
         }
 
@@ -521,6 +521,7 @@ nav {
                     padding: 0 30px;
                     color: rgb(146, 146, 146);
                     outline: none;
+                    padding-bottom: 5px;
                 }
                 .search-btn {
                     height: 40px;
@@ -1172,6 +1173,11 @@ nav {
         margin-top: 70px;
         cursor: pointer;
         color: $color1;
+        transition: all 0.5s;
+
+        &:hover{
+            color: $color2;
+        }
 
         @media (max-width: 576px) {
             margin-bottom: 130px;
@@ -1199,6 +1205,7 @@ nav {
             outline: none;
             border: 1px solid rgb(191, 191, 191);
             padding: 0 30px;
+            padding-bottom: 5px;
             font-size: 16px;
             background-color: rgb(247, 247, 247);
             opacity: 0.47;

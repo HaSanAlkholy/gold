@@ -587,7 +587,8 @@ nav .top-setting .setting-anchor::after {
 nav .top-setting .top-dropDown {
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #fff;
   min-width: 120px;
   padding: 8px 9px 9px;
@@ -647,6 +648,7 @@ nav .nav-top .top-head p {
   margin-inline-start: 10px;
   font-size: 14px;
   font-family: HelveticaBold;
+  margin-top: -5px;
 }
 
 nav .nav-top .top-body .social a {
@@ -743,6 +745,7 @@ nav .nav-bottom .search .search-content input {
   padding: 0 30px;
   color: #929292;
   outline: none;
+  padding-bottom: 5px;
 }
 
 nav .nav-bottom .search .search-content .search-btn {
@@ -1374,6 +1377,11 @@ nav .nava-active .nava-content {
   margin-top: 70px;
   cursor: pointer;
   color: #1f1f1f;
+  transition: all 0.5s;
+}
+
+.search-form .close-search:hover {
+  color: #caa959;
 }
 
 @media (max-width: 576px) {
@@ -1406,6 +1414,7 @@ nav .nava-active .nava-content {
   outline: none;
   border: 1px solid #bfbfbf;
   padding: 0 30px;
+  padding-bottom: 5px;
   font-size: 16px;
   background-color: #f7f7f7;
   opacity: 0.47;
