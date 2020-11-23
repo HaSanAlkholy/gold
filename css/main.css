@@ -979,6 +979,7 @@ nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul {
   background-color: white;
   width: fit-content;
   text-align: start;
+  min-height: 85vh;
 }
 
 nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .setting-anchor {
