@@ -735,6 +735,7 @@ nav {
                         width: 100%;
                         padding: 0;
                         z-index: 12;
+                        min-height:85vh;
 
                         & > .c2 {
                             & > ul {
@@ -743,7 +744,7 @@ nav {
                                 background-color: white;
                                 width: fit-content;
                                 text-align: start;
-                                min-height:85vh;
+
 
                                 & > li {
                                     .setting-anchor {
@@ -1003,6 +1004,7 @@ nav {
 
                         & > .top-dropDown {
                             background-color: unset;
+                            min-height: unset;
 
                             .c2 {
                                 ul {
@@ -1022,6 +1024,7 @@ nav {
                                             display: flex;
                                             flex-direction: column;
                                             margin: 7px 20px;
+                                            transform: unset;
 
                                             a {
                                                 margin: 5px 0;
