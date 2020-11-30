@@ -628,6 +628,14 @@ nav .top-setting:hover > .top-dropDown {
   opacity: 1;
 }
 
+@media (max-width: 1200px) {
+  nav .nav-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 nav .nav-top {
   border-bottom: 1px solid rgba(0, 0, 0, 0.102);
   color: #929292;
@@ -713,12 +721,6 @@ nav .nav-bottom .nav-logo img {
   max-width: 100%;
 }
 
-@media (max-width: 576px) {
-  nav .nav-bottom .nav-logo {
-    margin-inline-end: 15px;
-  }
-}
-
 nav .nav-bottom .search {
   margin-inline-end: auto;
   margin-inline-start: 40px;
@@ -800,41 +802,55 @@ nav .nav-bottom .call .call-body h4 {
   }
 }
 
-nav .nav-bottom .nav-icons-sm {
-  justify-content: flex-end;
-  align-items: center;
-  display: none;
-}
-
-nav .nav-bottom .nav-icons-sm > div {
-  margin-right: 20px;
-  font-size: 22px;
-  color: #1f1f1f;
-  cursor: pointer;
-}
-
-nav .nav-bottom .nav-icons-sm > div:hover {
-  color: #caa959;
-}
-
 @media (max-width: 1200px) {
-  nav .nav-bottom .nav-icons-sm {
-    display: flex;
-    margin-inline-start: auto;
+  nav .nav-bottom > .container > .c2 {
+    width: fit-content;
   }
 }
 
-nav .nav-bottom .nav-icons-sm .cart {
-  font-family: HelveticaBold;
+nav .nava-container {
+  background-color: #caa959;
 }
 
-nav .nav-bottom .nav-icons-sm .cart .cart-btn {
+nav .nava-container .nava-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .nava-container .nava-icons .user {
+  height: 50px;
+  width: 50px;
+  background-color: #1f1f1f;
+  margin-inline-end: 30px;
+  cursor: pointer;
+}
+
+nav .nava-container .nava-icons .user .setting-anchor {
+  color: white;
+  font-size: 22px;
+}
+
+nav .nava-container .nava-icons .user .setting-anchor:after {
+  display: none;
+}
+
+nav .nava-container .nava-icons .user:hover .setting-anchor {
+  color: #caa959;
+}
+
+nav .nava-container .nava-icons .cart {
+  font-family: HelveticaBold;
+  cursor: pointer;
+}
+
+nav .nava-container .nava-icons .cart .cart-btn {
   font-size: 24px;
   position: relative;
   transition: all 0.5s;
 }
 
-nav .nav-bottom .nav-icons-sm .cart .cart-btn .count {
+nav .nava-container .nava-icons .cart .cart-btn .count {
   width: 18px;
   height: 18px;
   display: flex;
@@ -849,54 +865,56 @@ nav .nav-bottom .nav-icons-sm .cart .cart-btn .count {
   right: -7px;
 }
 
-nav .nav-bottom .nav-icons-sm .cart .cart-btn:hover .count {
+nav .nava-container .nava-icons .cart:hover .count {
   animation: vibe 0.7s ease forwards;
 }
 
-nav .nav-bottom .nav-icons-sm .user .setting-anchor {
-  font-size: 22px;
-  color: #1f1f1f;
-}
-
-nav .nav-bottom .nav-icons-sm .user .setting-anchor:after {
-  display: none;
-}
-
-nav .nav-bottom .nav-icons-sm .user:hover .setting-anchor {
-  color: #caa959;
-}
-
-nav .sm-menu {
-  background-color: #1f1f1f;
-  color: white;
-  font-size: 17px;
-  height: 50px;
-  width: 100%;
-  justify-content: flex-start;
-  display: none;
-  cursor: pointer;
+nav .nava-container .nava-icons .cart p {
   font-family: HelveticaBold;
+  margin-inline-start: 5px;
+  margin-top: -5px;
+  font-size: 16px;
+}
+
+nav .nava-container .nava-icons .search-btn {
+  display: none;
+  font-size: 22px;
 }
 
 @media (max-width: 1200px) {
-  nav .sm-menu {
-    display: flex;
+  nav .nava-container .nava-icons > div {
+    margin-inline-start: 18px;
+  }
+  nav .nava-container .nava-icons .search-btn {
+    display: block;
+  }
+  nav .nava-container .nava-icons .cart p {
+    display: none;
+  }
+  nav .nava-container .nava-icons .user {
+    height: unset;
+    width: unset;
+    background-color: unset;
+    margin-inline-end: unset;
+  }
+  nav .nava-container .nava-icons .user .setting-anchor {
+    color: #1f1f1f;
   }
 }
 
-nav .sm-menu .menu {
+nav .nava-container > .container > .c2 {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav .sm-menu .menu span {
-  margin-inline-end: 13px;
-  font-size: 22px;
-}
-
-nav .nava-container {
-  background-color: #caa959;
+@media (max-width: 1200px) {
+  nav .nava-container {
+    background-color: unset;
+  }
+  nav .nava-container > .container > .c2 {
+    width: fit-content;
+  }
 }
 
 nav .nava {
@@ -980,6 +998,7 @@ nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul {
   background-color: white;
   width: fit-content;
   text-align: start;
+  padding-bottom: 40px;
 }
 
 nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .setting-anchor {
@@ -1061,75 +1080,6 @@ nav .nava .nava-content > ul .active a {
 
 nav .nava .nava-content .nava-head {
   display: none;
-}
-
-nav .nava .nava-content .nava-icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-@media (max-width: 1200px) {
-  nav .nava .nava-content .nava-icons {
-    display: none;
-  }
-}
-
-nav .nava .nava-content .nava-icons .user {
-  height: 50px;
-  width: 50px;
-  background-color: #1f1f1f;
-  margin-inline-end: 30px;
-  cursor: pointer;
-}
-
-nav .nava .nava-content .nava-icons .user .setting-anchor {
-  color: white;
-  font-size: 22px;
-}
-
-nav .nava .nava-content .nava-icons .user .setting-anchor:after {
-  display: none;
-}
-
-nav .nava .nava-content .nava-icons .user:hover .setting-anchor {
-  color: #caa959;
-}
-
-nav .nava .nava-content .nava-icons .cart {
-  font-family: HelveticaBold;
-  cursor: pointer;
-}
-
-nav .nava .nava-content .nava-icons .cart .cart-btn {
-  font-size: 24px;
-  position: relative;
-  transition: all 0.5s;
-}
-
-nav .nava .nava-content .nava-icons .cart .cart-btn .count {
-  width: 18px;
-  height: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  background-color: #1f1f1f;
-  color: white;
-  font-size: 12px;
-  position: absolute;
-  top: -3px;
-  right: -7px;
-}
-
-nav .nava .nava-content .nava-icons .cart:hover .count {
-  animation: vibe 0.7s ease forwards;
-}
-
-nav .nava .nava-content .nava-icons .cart p {
-  font-family: HelveticaBold;
-  margin-inline-start: 5px;
-  margin-top: -5px;
 }
 
 nav .nava .nava-content .nava-call {
@@ -1320,6 +1270,35 @@ nav .nava-active .nava-content {
   max-height: 100%;
   height: 100%;
   overflow-y: auto;
+}
+
+nav .sm-menu {
+  background-color: #1f1f1f;
+  color: white;
+  font-size: 17px;
+  height: 50px;
+  width: 100%;
+  justify-content: flex-start;
+  display: none;
+  cursor: pointer;
+  font-family: HelveticaBold;
+}
+
+@media (max-width: 1200px) {
+  nav .sm-menu {
+    display: flex;
+  }
+}
+
+nav .sm-menu .menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+nav .sm-menu .menu span {
+  margin-inline-end: 13px;
+  font-size: 22px;
 }
 
 .up {

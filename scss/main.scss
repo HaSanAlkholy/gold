@@ -411,6 +411,14 @@ nav {
         }
     }
 
+    .nav-body{
+        @media(max-width:1200px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
     .nav-top {
         border-bottom: 1px solid rgba(0, 0, 0, 0.102);
         color: rgb(146, 146, 146);
@@ -422,7 +430,6 @@ nav {
         }
 
         .top-head {
-
             img {
                 max-width: 31px;
             }
@@ -491,13 +498,11 @@ nav {
 
         .nav-logo {
             text-align: start;
-            img {
-                max-width: 100%;
-            }
 
-            @media (max-width: 576px) {
-                margin-inline-end: 15px;
+            img{
+                max-width:100%;
             }
+            
         }
 
         .search {
@@ -571,29 +576,47 @@ nav {
             }
         }
 
-        .nav-icons-sm {
+        @media(max-width:1200px){
+            &>.container>.c2{
+                width: fit-content;
+            }
+        }
+    }
+
+    .nava-container {
+        background-color: $color2;
+
+        .nava-icons {
+            display: flex;
             justify-content: flex-end;
             align-items: center;
-            display: none;
 
-            & > div {
-                margin-right: 20px;
-                font-size: 22px;
-                color: $color1;
+            .user {
+                height: 50px;
+                width: 50px;
+                background-color: $color1;
+                margin-inline-end: 30px;
                 cursor: pointer;
 
-                &:hover {
-                    color: $color2;
-                }
-            }
+                .setting-anchor {
+                    color: white;
+                    font-size: 22px;
 
-            @media (max-width: 1200px) {
-                display: flex;
-                margin-inline-start: auto;
+                    &:after {
+                        display: none;
+                    }
+                }
+                &:hover {
+                    .setting-anchor {
+                        color: $color2;
+                    }
+                }
             }
 
             .cart {
                 font-family: HelveticaBold;
+                cursor: pointer;
+
                 .cart-btn {
                     font-size: 24px;
                     position: relative;
@@ -613,62 +636,64 @@ nav {
                         top: -3px;
                         right: -7px;
                     }
-
-                    &:hover {
-                        .count {
-                            animation: vibe 0.7s ease forwards;
-                        }
+                }
+                &:hover {
+                    .count {
+                        animation: vibe 0.7s ease forwards;
                     }
+                }
+                p {
+                    font-family: HelveticaBold;
+                    margin-inline-start: 5px;
+                    margin-top: -5px;
+                    font-size: 16px;
                 }
             }
 
-            .user {
-                .setting-anchor {
-                    font-size: 22px;
-                    color: $color1;
-                    &:after {
+            .search-btn {
+                display: none;
+                font-size:22px;
+            }
+            @media (max-width: 1200px) {
+
+                &>div{
+                    margin-inline-start:18px;
+                }
+                .search-btn {
+                    display: block;
+                }
+
+                .cart{
+                    p{
                         display: none;
                     }
                 }
 
-                &:hover {
-                    .setting-anchor {
-                        color: $color2;
+                .user{
+                    height:unset;
+                    width:unset;
+                    background-color: unset;
+                    margin-inline-end: unset;
+
+                    .setting-anchor{
+                        color: $color1;
                     }
                 }
             }
         }
-    }
 
-    .sm-menu {
-        background-color: $color1;
-        color: white;
-        font-size: 17px;
-        height: 50px;
-        width: 100%;
-        justify-content: flex-start;
-        display: none;
-        cursor: pointer;
-        font-family: HelveticaBold;
-
-        @media (max-width: 1200px) {
+        &>.container>.c2{
             display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .menu {
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-
-            span {
-                margin-inline-end: 13px;
-                font-size: 22px;
+        @media(max-width:1200px){
+            background-color: unset;
+            &>.container>.c2{
+                width:fit-content
             }
         }
-    }
-
-    .nava-container {
-        background-color: $color2;
     }
 
     .nava {
@@ -735,16 +760,24 @@ nav {
                         width: 100%;
                         padding: 0;
                         z-index: 12;
-                        min-height:85vh;
+                        min-height: 85vh;
 
                         & > .c2 {
+                            // max-height: 70vh;
+                            // height: fit-content;
+                            // overflow-y: scroll;
+                            // overflow-x: hidden;
+                            // direction: ltr;
+                            // text-align: -webkit-right;
+                            // margin: 0 40px;
                             & > ul {
                                 min-width: 275px;
                                 padding: 20px;
                                 background-color: white;
                                 width: fit-content;
                                 text-align: start;
-
+                                padding-bottom: 40px;
+                                //direction: rtl;
 
                                 & > li {
                                     .setting-anchor {
@@ -834,74 +867,6 @@ nav {
 
             .nava-head {
                 display: none;
-            }
-
-            .nava-icons {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-
-                @media (max-width: 1200px) {
-                    display: none;
-                }
-
-                .user {
-                    height: 50px;
-                    width: 50px;
-                    background-color: $color1;
-                    margin-inline-end: 30px;
-                    cursor: pointer;
-
-                    .setting-anchor {
-                        color: white;
-                        font-size: 22px;
-
-                        &:after {
-                            display: none;
-                        }
-                    }
-                    &:hover {
-                        .setting-anchor {
-                            color: $color2;
-                        }
-                    }
-                }
-
-                .cart {
-                    font-family: HelveticaBold;
-                    cursor: pointer;
-
-                    .cart-btn {
-                        font-size: 24px;
-                        position: relative;
-                        transition: all 0.5s;
-
-                        .count {
-                            width: 18px;
-                            height: 18px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            border-radius: 100%;
-                            background-color: $color1;
-                            color: white;
-                            font-size: 12px;
-                            position: absolute;
-                            top: -3px;
-                            right: -7px;
-                        }
-                    }
-                    &:hover {
-                        .count {
-                            animation: vibe 0.7s ease forwards;
-                        }
-                    }
-                    p {
-                        font-family: HelveticaBold;
-                        margin-inline-start: 5px;
-                        margin-top: -5px;
-                    }
-                }
             }
 
             .nava-call {
@@ -1120,6 +1085,33 @@ nav {
             overflow-y: auto;
         }
     }
+
+    .sm-menu {
+        background-color: $color1;
+        color: white;
+        font-size: 17px;
+        height: 50px;
+        width: 100%;
+        justify-content: flex-start;
+        display: none;
+        cursor: pointer;
+        font-family: HelveticaBold;
+
+        @media (max-width: 1200px) {
+            display: flex;
+        }
+
+        .menu {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            span {
+                margin-inline-end: 13px;
+                font-size: 22px;
+            }
+        }
+    }
 }
 
 .up {
@@ -1179,7 +1171,7 @@ nav {
         color: $color1;
         transition: all 0.5s;
 
-        &:hover{
+        &:hover {
             color: $color2;
         }
 
@@ -1913,10 +1905,10 @@ footer {
     @media (max-width: 576px) {
         padding-top: 45px;
     }
-    
-    .c2{
-        @media(max-width:992px){
-            padding:0 20px;
+
+    .c2 {
+        @media (max-width: 992px) {
+            padding: 0 20px;
         }
     }
 
