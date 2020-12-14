@@ -87,6 +87,7 @@ $(window).on('load', function () {
       $('.footer-list').attr("data-toggle", "none");
       $('.footer-list ul').removeClass('collapse');
       $('.footer-list ul').css('height', 'auto');
+      $('#nava').removeClass('nava-active');
     }
   }
 

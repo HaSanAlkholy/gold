@@ -812,10 +812,10 @@ nav {
 
                                     .top-dropDown {
                                         top: 0;
-                                        left: -42%;
+                                        right: calc(100% + 9px);
                                         text-align: start;
-                                        transform: translateX(-50%);
-                                        right: unset;
+                                        transform: unset;
+                                        width: fit-content;
 
                                         a {
                                             font-family: HelveticaRoman;
@@ -824,9 +824,21 @@ nav {
                                             }
                                         }
                                     }
+
+                                    .inside-menu{
+                                        .setting-anchor{
+                                            padding-top:2px;
+                                        }
+            
+                                        .top-dropDown{
+                                            top: -8px;
+                                        }
+                                    }
                                 }
                             }
                         }
+
+                      
                     }
                 }
 
@@ -978,9 +990,14 @@ nav {
                                     width: 100%;
 
                                     & > li {
-                                        & > .setting-anchor {
+                                         .setting-anchor {
                                             border: none;
                                             padding: 0;
+                                            align-items: center;
+                                        }
+
+                                        .top-dropDown{
+                                            width: unset;
                                         }
                                     }
 

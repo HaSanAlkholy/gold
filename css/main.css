@@ -1031,10 +1031,10 @@ nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li:nth-last-of-ty
 
 nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .top-dropDown {
   top: 0;
-  left: -42%;
+  right: calc(100% + 9px);
   text-align: start;
-  transform: translateX(-50%);
-  right: unset;
+  transform: unset;
+  width: fit-content;
 }
 
 nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .top-dropDown a {
@@ -1043,6 +1043,14 @@ nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .top-dropDown 
 
 nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .top-dropDown a:hover {
   color: #caa959;
+}
+
+nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .inside-menu .setting-anchor {
+  padding-top: 2px;
+}
+
+nav .nava .nava-content > ul .cat > .top-dropDown > .c2 > ul > li .inside-menu .top-dropDown {
+  top: -8px;
 }
 
 nav .nava .nava-content > ul .slide .drop {
@@ -1188,9 +1196,13 @@ nav .nava .nava-content .nava-call .call-body h4 {
     min-width: unset;
     width: 100%;
   }
-  nav .nava .nava-content > ul .cat > .top-dropDown .c2 ul > li > .setting-anchor {
+  nav .nava .nava-content > ul .cat > .top-dropDown .c2 ul > li .setting-anchor {
     border: none;
     padding: 0;
+    align-items: center;
+  }
+  nav .nava .nava-content > ul .cat > .top-dropDown .c2 ul > li .top-dropDown {
+    width: unset;
   }
   nav .nava .nava-content > ul .cat > .top-dropDown .c2 ul .in-menu .top-dropDown {
     display: flex;
